@@ -1,0 +1,13 @@
+UIViewController+PushTransition requires QuartzCore.framework.
+
+Instead of
+
+	[self presentViewController:viewController animated:YES completion:NULL];
+
+you
+
+	#import "UIViewController+PushTransition.h"
+
+and
+
+	[self pushViewController:viewController];
