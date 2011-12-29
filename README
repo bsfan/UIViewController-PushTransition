@@ -2,7 +2,7 @@ UIViewController+PushTransition requires QuartzCore.framework.
 
 Instead of
 
-	[self presentViewController:viewController animated:YES completion:NULL];
+	[self presentViewController:viewController animated:YES completion:NULL]; - or - [self presentModalViewController:viewController animated:YES];
 
 you
 
@@ -14,7 +14,7 @@ and
 
 Instead of
 
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:NULL]; - or - [self dismissModalViewControllerAnimated:YES];
 
 you
 
