@@ -11,3 +11,11 @@ you
 and
 
 	[self pushViewController:viewController];
+
+Instead of
+
+	[self dismissModalViewControllerAnimated:YES];
+
+you
+
+	[self dismissPushedViewController];
